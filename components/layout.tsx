@@ -2,7 +2,7 @@ import Head from 'next/head';
 import React from "react";
 import TopNavbar from "./topNavbar";
 
-export const siteTitle = 'Hacker News Plus';
+export const siteTitle = 'Workout Insights';
 
 export default function Layout({
                                    children,
