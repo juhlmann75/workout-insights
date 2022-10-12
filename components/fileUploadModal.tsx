@@ -12,11 +12,11 @@ export default function FileUploadModal() {
     return (
         <div className="flex items-center justify-center m-4">
             <Button onClick={() => setModalOpen(!modalOpen)}>
-                Import New Bookmarks File
+                Import New Workout Data
             </Button>
             <Modal show={modalOpen} onClose={() => setModalOpen(!modalOpen)}>
                 <Modal.Header>
-                    Import New Bookmarks File
+                    Import New Workout Data
                 </Modal.Header>
                 <Modal.Body>
                     <FileUpload myVar={modalOpen} setMyVar={setModalOpen}></FileUpload>

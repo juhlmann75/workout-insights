@@ -1,6 +1,7 @@
 import {Navbar} from "flowbite-react";
 import React from "react";
 import ToggleButton from "./toggleButton";
+import FileUploadModal from "./fileUploadModal";
 
 export default function TopNavbar() {
     return (
@@ -15,6 +16,7 @@ export default function TopNavbar() {
             </Navbar.Brand>
             <Navbar.Toggle/>
             <Navbar.Collapse>
+                <FileUploadModal></FileUploadModal>
                 <ToggleButton></ToggleButton>
             </Navbar.Collapse>
         </Navbar>
