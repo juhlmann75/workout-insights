@@ -1,4 +1,5 @@
 export interface WorkoutData {
+    id?: number;
     date: string;
     workoutName: string;
     duration: string;

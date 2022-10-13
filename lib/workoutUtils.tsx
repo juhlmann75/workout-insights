@@ -3,7 +3,7 @@ import {WorkoutData} from "../models/workoutData";
 import {workoutDB} from "../models/workoutDB";
 
 export function saveWorkoutFile() {
-    const headers = ['Date', 'Workout Name', 'Duration', 'Exercise Name', 'Set Order', 'Weight', 'Reps', 'Distance', 'Seconds', 'Notes', 'Workout Notes', 'RPE'];
+    const headers = ['date', 'workoutName', 'duration', 'exerciseName', 'setOrder', 'weight', 'reps', 'distance', 'seconds', 'notes', 'workoutNotes', 'rpe'];
     let fileReader = new FileReader();
     let fileObject = document.getElementById('workoutFile') as HTMLInputElement | null;
 
