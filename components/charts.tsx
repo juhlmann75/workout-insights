@@ -47,7 +47,7 @@ export default function Charts() {
 
     const options = {
         indexAxis: 'y' as const,
-        responsive: true,
+        maintainAspectRatio: false,
         plugins: {
             legend: {
                 position: 'top' as const,
@@ -75,8 +75,8 @@ export default function Charts() {
     };
 
     return (
-        <div>
-            <Bar options={options} data={data}/>
+        <div className="h-[80vh] w-[80vw] relative m-auto">
+            <Bar options={options} data={data} />
         </div>
     )
 
